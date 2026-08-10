@@ -1,0 +1,28 @@
+{
+  "format": "catsumi-sprite-atlas-v1",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 6,
+  "rows": 4,
+  "animations": {
+    "idle": { "sheet": "catsumi-core.png", "row": 0, "frames": 6, "frameDurationMs": 180, "loop": true },
+    "walk": { "sheet": "catsumi-core.png", "row": 1, "frames": 6, "frameDurationMs": 110, "loop": true },
+    "run": { "sheet": "catsumi-core.png", "row": 2, "frames": 6, "frameDurationMs": 80, "loop": true },
+    "sleep": { "sheet": "catsumi-core.png", "row": 3, "frames": 6, "frameDurationMs": 300, "loop": true },
+
+    "eat": { "sheet": "catsumi-activities.png", "row": 0, "frames": 6, "frameDurationMs": 180, "loop": true },
+    "read": { "sheet": "catsumi-activities.png", "row": 1, "frames": 6, "frameDurationMs": 240, "loop": true },
+    "type": { "sheet": "catsumi-activities.png", "row": 2, "frames": 6, "frameDurationMs": 120, "loop": true },
+    "dance": { "sheet": "catsumi-activities.png", "row": 3, "frames": 6, "frameDurationMs": 140, "loop": true },
+
+    "trackCursor": { "sheet": "catsumi-environment.png", "row": 0, "frames": 6, "frameDurationMs": 160, "loop": true },
+    "climb": { "sheet": "catsumi-environment.png", "row": 1, "frames": 6, "frameDurationMs": 130, "loop": true },
+    "fall": { "sheet": "catsumi-environment.png", "row": 2, "frames": 6, "frameDurationMs": 90, "loop": true },
+    "taskbarSit": { "sheet": "catsumi-environment.png", "row": 3, "frames": 6, "frameDurationMs": 220, "loop": true },
+
+    "drinkCoffee": { "sheet": "catsumi-moods.png", "row": 0, "frames": 6, "frameDurationMs": 220, "loop": true },
+    "listenToMusic": { "sheet": "catsumi-moods.png", "row": 1, "frames": 6, "frameDurationMs": 150, "loop": true },
+    "confused": { "sheet": "catsumi-moods.png", "row": 2, "frames": 6, "frameDurationMs": 200, "loop": true },
+    "tiredYawn": { "sheet": "catsumi-moods.png", "row": 3, "frames": 6, "frameDurationMs": 240, "loop": true }
+  }
+}
