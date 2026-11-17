@@ -1,0 +1,37 @@
+
+name: Build Catsumi for Windows
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Windows release
+        run: flutter build windows --release
+
+      - name: Package application
+        uses: actions/upload-artifact@v4
+        with:
+          name: Catsumi-Windows-x64
+          path: build/windows/x64/runner/Release/
+          if-no-files-found: error
+          retention-days: 7
